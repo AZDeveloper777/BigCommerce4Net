@@ -20,6 +20,7 @@ using System.Linq;
 using System.Text;
 using RestSharp;
 using Newtonsoft.Json;
+using RestSharp.Authenticators;
 
 namespace BigCommerce4Net.Api
 {
