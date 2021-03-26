@@ -24,7 +24,7 @@ using System.Runtime.Serialization;
 namespace BigCommerce4Net.Domain
 {
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum PaymentStatus
+    public enum PaymentStatus : int
     {
         [EnumMember(Value = "")]
         Unknown = 0,
@@ -47,6 +47,8 @@ namespace BigCommerce4Net.Domain
         [EnumMember(Value = "declined")]
         Declined = 6,
 
+        [EnumMember(Value = "paid")]
+        Paid = 7,
 
     }
 }
