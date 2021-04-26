@@ -50,5 +50,8 @@ namespace BigCommerce4Net.Domain
         [EnumMember(Value = "paid")]
         Paid = 7,
 
+        [EnumMember(Value = "held for review")]
+        HeldForReview = 8,
+
     }
 }
